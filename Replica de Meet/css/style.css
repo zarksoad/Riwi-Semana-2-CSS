@@ -1,0 +1,243 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(74, 72, 78);
+}
+
+/* Estilos del contenedor principal */
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 30% 30% 1fr ;
+    height: 100vh;
+    background-color: rgb(74, 72, 78);
+    
+}
+
+/* Estilos para el grupo1 */
+.grupo1{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px; 
+
+}
+.g1{
+    border: 1px solid #000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(105, 102, 120);
+
+}
+
+/* Estilos para la unica imagen */
+img{
+    border-radius: 50%;
+    
+}
+/* Estilos para la clase imagen  para poder moverla*/
+
+.imagen{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.letra{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nombre{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color: white;
+}
+p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/*Pocicionar microfono*/
+
+.micro{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/*Pocicionar Letras*/
+
+.letraIndividual{
+    color: white;
+    font-size: 70px;
+    font-weight: 800;
+    border: 1px  ;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.letraIndividual2{
+    color: white;
+    font-size: 100px;
+    font-weight: 800;
+    border: 1px  ;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Se le da color y a al elemento central*/
+.J{
+    background-color: orangered;
+
+}
+.z{
+    background-color: rgb(141, 224, 17);
+}
+.y{
+    background-color: orange;
+
+}
+.d{
+    background-color: rgb(36, 142, 144);
+
+}
+
+.a{
+    background-color: rgb(118, 197, 198);
+}
+.j{
+    background-color: rgb(18, 87, 88);
+}
+.R{
+    background: orange;
+}
+.rr{
+    background: orangered;
+    position: relative;
+    right: 4%;
+}
+
+.a29{
+    background: orange;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    justify-content: end;
+}
+
+.itemDouble{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+}
+
+.nombre2{
+    position: relative;
+    bottom: 10%;
+    left: 5%;
+}
+.nombre6mas{
+    position: relative;
+    top: 30%;
+    right: 30%;
+
+}
+.grupo2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px; 
+
+}
+.g2{
+    border: 1px solid #000;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: rgb(105, 102, 120);
+
+}
+
+.g2:first-child,.g1:first-child{
+    margin-left: 10px;
+}
+.g2:last-child,.g1:last-child{
+    margin-right: 10px;
+}
+
+
+/*Pie de pagina*/
+
+i{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.item >i{
+    font-size: 80px;
+
+}
+
+.inicio{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: alias;
+
+}
+
+.centrales>i{
+    background-color: rgb(105, 102, 120);
+    border: 1px solid rgb(105, 102, 120);
+    padding: 10px;
+    border-radius: 50%
+    
+}
+
+.finales{
+    margin-right: 10px;
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Efectos*/
+
+i,.letraIndividual,.letraIndividual2,img{
+   transition: all 0.4s ease;
+}
+
+
+i:hover,.letraIndividual:hover,.letraIndividual2:hover,img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.nombre:hover{
+    cursor: pointer;
+    
+}
+
+
